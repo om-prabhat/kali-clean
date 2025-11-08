@@ -145,6 +145,9 @@ client.unfocused #333333 #333333 #888888
 client.urgent #900000 #900000 #ffffff
 default_border normal
 
+# VM Res fix
+exec_always --no-startup-id xrandr --output Virtual1 --mode 1920x1080
+
 # feh - Wallpaper Setter
 exec_always --no-startup-id sh ~/.fehbg
 
@@ -153,9 +156,6 @@ exec_always --no-startup-id compton -b --config ~/.config/compton/compton.conf
 
 # VM Clipboard Fix
 exec_always --no-startup-id ~/.config/i3/clipboard_fix.sh
-
-# VM Res fix
-exec_always --no-startup-id xrandr --output Virtual1 --mode 1920x1080
 
 # Resize Bindings
 bindsym $mod+Ctrl+Shift+Right resize shrink width 10 px or 10 ppt
