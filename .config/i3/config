@@ -125,7 +125,7 @@ bar {
         i3bar_command i3bar -t
         position top
         height 26
-        font pango:RobotoMono Nerd Font Regular 7.5
+        font pango:JetBrainsMono Nerd Font Regular 7.5
         colors {
             statusline #EEEEEE
             background #1C1D2B88
@@ -162,6 +162,9 @@ bindsym $mod+Ctrl+Shift+Right resize shrink width 10 px or 10 ppt
 bindsym $mod+Ctrl+Shift+Up resize grow height 10 px or 10 ppt
 bindsym $mod+Ctrl+Shift+Down resize shrink height 10 px or 10 ppt
 bindsym $mod+Ctrl+Shift+Left resize grow width 10 px or 10 ppt
+
+# Hackthebox :):)
+bindsym $mod+Shift+h exec --no-startup-id /home/kali/.config/rofi/htb/hackthebox.sh
 
 # screenshot
 bindsym $mod+P exec flameshot gui
